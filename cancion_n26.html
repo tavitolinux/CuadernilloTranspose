@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>N26. Nunca pasó por su mente</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">N26. Nunca pasó por su mente</h1>
+    </div>
+
+    <pre data-key="G">N26. 
+
+E             B7            C#m
+Nunca pasó por su mente
+A                    E
+Que sería el rey
+E               B7              C#m
+Ni con vencer a un gigante
+         A              E
+Más fuerte que él
+
+B7                           C#m
+Era tan solo un muchacho
+                             A                         E
+Que al viento cantaba con su arpa fiel
+B7                         C#m            
+Un pastorcito de ovejas que amaba
+          A              B7         E
+A su Dios por encima de él
+
+E                B7            C#m
+Nunca espero ganar premios
+     A               E
+Con su linda voz
+E                  B7                C#m
+Ni que este mundo aplaudiera
+ A                     E
+Sus actos de valor
+
+B7                              C#m
+Nunca buscó ser primero en la fila
+         A                           E
+Tampoco llamar la atención
+B7                          C#m
+Era tan salo un muchacho que
+                  A        B7                 E
+Amaba cantarle tan solo a su Dios
+
+Coro:
+E           A                        E
+Un corazón conforme al tuyo
+(C#m)        B7
+Es lo que pido
+                          C#m
+Que aún en mi error quiera
+     E           A        B7
+volver a estar contigo
+                    F#m               C#m
+Dame humildad para aceptar
+               A               B7
+Dame la fe para confiar
+                 F#m   (C#m)    A
+Dame tu abrazo   mi    Señor
+B7            E
+Una vez más
+
+E                   B7               C#m
+Cuenta la historia que un día
+A                E
+La guerra dejó
+E           B7             C#m    A          E
+Una mujer y una orden su cielo nubló
+B7                     G#m
+Ya de rodillas cantó como un niño
+        A                               E
+Las notas que Dios escuchó:
+B7                         C#m
+"Contra ti solo he pecado
+                      A       B7              E
+transforma mi vida, perdona mi error"
+
+Coro:
+E           A                        E
+Un corazón conforme al tuyo
+(C#m)        B7
+Es lo que pido
+                          C#m
+Que aún en mi error quiera
+      A                     B7
+volver a estar contigo
+                    F#m               C#m
+Dame humildad para aceptar
+               A               B7
+Dame la fe para confiar
+                 F#m   (C#m)    A
+Dame tu abrazo   mi    Señor
+B7            C#m
+Una vez más
+
+                 A              E  
+Dame tu abrazo mi Señor
+B7             E
+Una vez más
+
+
+
+
+O
+___________________________</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_n25.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_o1.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

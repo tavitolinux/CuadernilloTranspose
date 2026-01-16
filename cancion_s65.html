@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>S65. Somos el pueblo que Dios escogió</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">S65. Somos el pueblo que Dios escogió</h1>
+    </div>
+
+    <pre data-key="G">S65. 
+G                                  D
+Somos el pueblo que Dios escogió
+               Em         C
+Para llevar Su palabra
+                  G                     D
+Y con firmeza en esa verdad
+              C             D           G
+El evangelio queremos llevar
+
+G                             D         
+No temas porque desde que entendiste
+                   Em            C
+Y te humillaste ante mí
+           G                     D  
+Tus palabras fueron oídas
+         C       D         G
+Y ahora estoy aquí
+
+G                           D
+No temas porque Yo estoy contigo
+         Em                C
+No temas porque Yo soy tu Dios
+ G                          D
+No temas porque Yo te he redimido
+C                  D    G
+Y nunca te dejaré
+
+G                             D
+Problemas van a venir
+                   Em                     C
+Pero en tu plan queremos vivir
+G                             D
+Dános tu Espíritu Santo
+Em                          C
+Dános tu Espíritu Santo
+G                                    D
+El poder de tu Espíritu Santo
+                     G
+Venga sobre mí
+
+E                                   B7
+Somos el pueblo que Dios escogió
+             C#m        A
+Para llevar Su palabra
+                E                      B7
+Y con firmeza en esa verdad
+              A          B7           E     B7
+El evangelio queremos llevar
+
+E                             B7         
+No temas porque desde que entendiste
+                C#m          A
+Y te humillaste ante mí
+           E                     B7  
+Tus palabras fueron oídas
+       A       B7       E   B7
+Y ahora estoy aquí
+
+E                           B7
+No temas porque Yo estoy contigo
+         C#m                 A
+No temas porque Yo soy tu Dios
+      E                          B7
+No temas porque Yo te he redimido
+    A            B7   E   B7
+Y nunca te dejaré
+
+E                             B7
+Problemas van a venir
+                  C#m                    A
+Pero en tu plan queremos vivir
+E                             B7
+Dános tu Espíritu Santo
+C#m                          A
+Dános tu Espíritu Santo
+E                                    B7
+El poder de tu Espíritu Santo
+                     E
+Venga sobre mí
+
+F                                  C
+Somos el pueblo que Dios escogió
+             Dm         Ab
+Para llevar Su palabra
+                F                     C
+Y con firmeza en esa verdad
+              Bb          C           F
+El evangelio queremos llevar
+
+F                             C         
+No temas porque desde que entendiste
+                Dm            Bb
+Y te humillaste ante mí
+           F                     C  
+Tus palabras fueron oídas
+       Bb       C        F
+Y ahora estoy aquí
+
+F                           C
+No temas porque Yo estoy contigo
+         Dm                Bb
+No temas porque Yo soy tu Dios
+      F                          C
+No temas porque Yo te he redimido
+    Bb           C    F
+Y nunca te dejaré
+
+F                             C
+Problemas van a venir
+                   Dm                     Bb
+Pero en tu plan queremos vivir
+F                             C
+Dános tu Espíritu Santo
+Dm                          Bb
+Dános tu Espíritu Santo
+F                                    C
+El poder de tu Espíritu Santo
+                     F
+Venga sobre mí</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_s64.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_s66.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

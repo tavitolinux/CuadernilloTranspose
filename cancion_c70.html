@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>C70. Cuando el Padre mandó a su Hijo</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">C70. Cuando el Padre mandó a su Hijo</h1>
+    </div>
+
+    <pre data-key="G">C70. 
+D                               A
+Cuando el Padre mandó a su Hijo
+Bm                  A
+a este mundo para sufrir
+D                       A   
+puso su amor en el altar
+Bm               A         D
+para que podamos vivir
+D                 A
+Sólo puedo agradecerte
+Bm           A
+tan sólo puedo orar
+D                  A
+sólo puedo alzar mis manos 
+G        A         D
+y tus glorias cantar
+
+
+Señor la vida que me diste
+
+es un camino para andar
+
+y me muestra el calvario
+
+siempre ahí te seguiré
+
+Sólo puedo agradecerte…
+
+
+Señor quiero tu bendición
+
+a tus pies me quiero sentar
+
+nada que este mundo ofrece
+
+de tu lado me puede alejar.
+
+
+Sólo puedo agradecerte…
+
+
+E                                   B7
+Cuando el Padre mandó a su Hijo
+C#m               B7
+a este mundo para sufrir
+E                         B7   
+puso su amor en el altar
+A                 B7         E
+para que podamos vivir
+
+E                   B7
+Sólo puedo agradecerte
+C#m        B7
+tan sólo puedo orar
+E                    B7
+sólo puedo alzar mis manos 
+A       B7            E
+y tus glorias cantar
+
+E                    B7
+Señor la vida que me diste
+C#m               B7
+es un camino para andar
+E                     B7
+y me muestra el calvario
+A                      B7      E
+siempre ahí te seguiré
+
+Sólo puedo agradecerte…
+
+E                       B7
+Señor quiero tu bendición
+C#m                  B7
+a tus pies me quiero sentar
+E                      B7
+nada que este mundo ofrece
+A                    B7             E
+de tu lado me puede alejar.
+
+Sólo puedo agradecerte…
+
+
+
+
+
+F                                   C
+Cuando el Padre mandó a su Hijo
+Dm                      C
+a este mundo para sufrir
+F                         C   
+puso su amor en el altar
+Bb               C         F
+para que podamos vivir
+
+F                   C
+Sólo puedo agradecerte
+Dm         C
+tan sólo puedo orar
+F                    C
+sólo puedo alzar mis manos 
+Bb     C              F
+y tus glorias cantar
+
+F                    C
+Señor la vida que me diste
+Dm                 C
+es un camino para andar
+F                     C
+y me muestra el calvario
+Bb                    C      F
+siempre ahí te seguiré
+
+Sólo puedo agradecerte…
+
+F                       C
+Señor quiero tu bendición
+Dm                 C
+a tus pies me quiero sentar
+F                      C
+nada que este mundo ofrece
+Bb                   C             F
+de tu lado me puede alejar.
+
+Sólo puedo agradecerte…</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_c69.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_c71.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>H15. Hay una senda que el mundo no conoce</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">H15. Hay una senda que el mundo no conoce</h1>
+    </div>
+
+    <pre data-key="G">H15. 
+D  
+Hay una senda que el mundo no conoce
+                A                                     D 
+hay una senda que yo pude encontrar
+                  G                                    D
+//En Cristo tengo  la salvación de mi alma
+                      A                                    D
+Cristo es la senda que yo pude encontrar//.
+D
+Aquel camino de tantos sufrimientos
+                 A                                     D
+aquel camino que el mundo me trazó
+                       G                                 D
+//fue transformado en aquel feliz momento
+                      A                            D
+cuando mi Cristo a mí me rescató//.
+
+
+C                                   F                  C
+Hay una senda que el mundo no conoce
+        G7                                            C
+Hay una senda que yo pude encontrar
+                F            G7               C
+En Cristo tengo la salvación de mi alma
+                    G7                                  C
+Cristo es la senda que me puede salvar
+
+
+    C                         F               C
+Y aquel camino de tanto sufrimiento
+              G7                             C
+aquel camino que Cristo me trazo
+                   F                 G7               C
+Fue transformado en aquel feliz momento
+                  G7                            C
+cuando mi Cristo al cielo me llamó</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_h14.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_h16.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

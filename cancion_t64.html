@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>T64. Te adoraré a ti Señor</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">T64. Te adoraré a ti Señor</h1>
+    </div>
+
+    <pre data-key="G">T64. 
+
+Dm
+Te adoraré a ti Señor 
+        Gm
+con todo mi ser,
+             Dm               A7
+con un salmo te alabaré
+Dm                   
+te adorare a ti Señor 
+       Gm
+con todo mi ser
+            Dm A7        Dm   D7
+todo el día  te alabare;
+
+        Gm    C           F   Dm
+Pues tu Señor eres santo 
+        Gm            A7
+Y tu nombre es digno de 
+     Dm D7
+alabar
+
+      Gm      C           F         Dm
+Permite Señor que mi corazón
+        Gm      A7          Dm
+Sea puro y santo para ti
+
+Dm
+cuanto te amo
+Gm
+cuanto te amo
+C            F
+y confió, y confió
+Dm                 Gm
+cuanto te amo y confió
+      A7
+y siempre hablare de ti Señor
+
+
+
+Em
+Te adoraré a ti Señor 
+        Am
+con todo mi ser,
+             Em               B7
+con un salmo te alabaré
+Em                   
+te adorare a ti Señor 
+         Am
+con todo mi ser
+              B7           Em   E7
+todo el día te alabare;
+        Am    D      G       Em
+pues tu Señor eres santo 
+         Am            B7             Em   E7
+Y tu nombre es digno de alabar
+      Am     D          G          Em
+Permite Señor que mi corazón
+        Am      B7        Em
+Sea puro y santo para ti
+Em
+cuanto te amo
+Am
+cuanto te amo
+D           G
+y confió, y confió
+Em                 Am
+cuanto te amo y confió
+      B7
+y siempre hablare de ti Señor</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_t63.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_t65.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

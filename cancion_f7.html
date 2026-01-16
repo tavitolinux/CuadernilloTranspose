@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>F7. ¿Quién nos separará</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">F7. ¿Quién nos separará</h1>
+    </div>
+
+    <pre data-key="G">F7. 
+
+F                       Am    
+¿Quién nos separará
+Bb                C
+del amor de Cristo?
+F                    Am   
+¿Quién nos alejará 
+  Bb                 C
+del amor de nuestro Dios?
+
+Dm
+Ni tribulación o angustia
+C
+Peligro hambre o desnudez
+Bb                    Gm              C C7
+Nos podrá separar de su amor
+
+F                       Am    
+¿Quién nos separará
+Bb                C
+del amor de Cristo?
+F                    Am   
+¿Quién nos alejará 
+  Bb                 C
+del amor de nuestro Dios?
+
+Dm
+Ni lo alto ni lo profundo
+C
+Ni ninguna otra cosa creada
+Bb                    Gm                        C C7
+Nos podrá separar del amor de Dios
+
+
+F               Am     
+En Cristo somos 
+Bb                 C
+más que vencedores
+F               Am     
+En Cristo somos 
+Bb                 C
+más que ganadores
+
+Bb                       C
+Ni la vida ni la muerte
+Am             Dm
+Podrá separarnos
+Bb                    C  
+Del amor de Dios 
+                    F    (F Am Bb C)
+en Cristo Jesús
+
+
+G                       Bm    
+¿Quién nos separará
+C                  D
+del amor de Cristo?
+G                    Bm   
+¿Quién nos alejará 
+  C                  D
+del amor de nuestro Dios?
+Em
+Ni tribulación o angustia
+D
+Peligro hambre o desnudez
+C                     Am              D  D7
+Nos podrá separar de su amor
+
+G                       Bm    
+¿Quién nos separará
+C                 D
+del amor de Cristo?
+G                    Bm   
+¿Quién nos alejará 
+  C                 D
+del amor de nuestro Dios?
+
+Em
+Ni lo alto ni lo profundo
+D
+Ni ninguna otra cosa creada
+C                     Am
+Nos podrá separar 
+                     D   D7
+del amor de Dios
+
+G               Bm     
+En Cristo somos 
+C                  D
+más que vencedores
+G               Bm     
+En Cristo somos 
+C                  D
+más que ganadores
+
+C                       D
+Ni la vida ni la muerte
+Bm             Em
+Podrá separarnos
+C                    D  
+Del amor de Dios 
+                    G
+en Cristo Jesús</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_f6.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_g1.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

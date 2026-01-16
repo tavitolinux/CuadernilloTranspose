@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>L19. Levántate, oh amado mío</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">L19. Levántate, oh amado mío</h1>
+    </div>
+
+    <pre data-key="G">L19. 
+C                     Am
+Levántate, oh amado mío
+F          G       C
+amigo mío y ven
+C                      Am
+vayamos de mañana al campo
+F    G          C            
+alabemos a nuestro creador
+F                      G                          C Em7 Am
+aquel que con sus manos nos formó
+F                         G                  C Em7 Am
+aquel que por su Gracia nos salvó
+F                          G                C Em7 Am
+aquel que por su amor nos unió,
+F    G         C  Am F           G   C C7
+tal es mi amado, tal mi amigo es,
+F  G            C   Am F         G    C
+tal es mi amado, tal mi esposo es.
+
+Levántate oh amada mía
+paloma mía y ven
+que con tus ojos has apresado
+y prendido mi corazón,
+hermosa eres cual la luna
+esclarecida como el sol
+y de desear como Jerusalén,
+tal es mi amada, tal mi paloma es,
+tal es mi amada, tal mi esposa es.
+
+Levántate oh amado mío
+marido mío y ven
+vayamos a las viñas
+mis amores ahí te daré
+que es mi amado
+más que otro amado,
+señalado es entre diez mil, 
+varón perfecto y codiciable todo es,
+tal es mi amado, tal mi amigo es,
+tal es mi amada, tal mi paloma es,
+tal es nuestro creador el Santo de Israel.</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_l18.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_l20.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>H7. Hasta aquí</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">H7. Hasta aquí</h1>
+    </div>
+
+    <pre data-key="G">H7. 
+
+               D
+Hasta aquí 
+      G                  D
+nos ayudó Jehová,
+             F#m
+hasta aquí 
+      G                    A
+contamos con su brazo fuerte.
+           Bm                 F#m7
+En un mundo de maldad 
+             G                 D
+nos sostuvo su bondad.
+              D
+Hasta aquí 
+       Em A          D
+nos ayudó Jehová.
+
+              D
+Gracias Dios 
+       G                  D
+por darnos el sustento,
+          D
+hubo pan 
+      G                    A
+en nuestra mesa cada día,
+         D                      F#m
+bendiciones abundantes 
+          G                     D
+derramaste en mi familia,
+           D
+tu promesa fiel 
+    Em A        D
+fortaleció mi vida.
+
+(Coro)
+
+              D
+Gracias Dios 
+          G                     D
+por estar siempre presente
+             D
+Cuando todo 
+       G                    A
+parecía estar en contra mía
+
+                   D                      F#m
+Cuando humanos me rodearon
+            G                D
+y no hallaba la salida
+           D
+Tu presencia fiel 
+    Em A        D
+fortaleció mi vida.
+
+(Coro)
+              D
+Gracias Dios 
+      G                      D
+por el don más precioso
+           D
+Por Jesús 
+       G                A
+quien alabamos cada día
+         D              F#m
+Hizo renacer el gozo 
+       G                           D
+y la paz que ya no había
+           D
+Tu promesa fiel 
+       Em   A        D
+nos llena de alegría.
+
+(Coro)</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_h6.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_h8.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

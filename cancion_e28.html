@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>E28. El Señor Jesús es mi pastor</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">E28. El Señor Jesús es mi pastor</h1>
+    </div>
+
+    <pre data-key="G">E28. 
+        D                    G
+El Señor Jesús es mi pastor
+    D                   G 
+y nada a mí me faltará
+             D                   Bm               C  A
+junto a aguas quietas me pastoreará
+     D                 G
+mi alma Él confortará
+     D               G
+en su justicia me guiará
+     D                     Bm                 C  A7
+su nombre amo y Él me sostendrá
+
+        D          G  
+// Al valle de sombra y muerte
+D             G
+yo nunca temeré
+D                 G                      C      A
+porque el Señor conmigo está. //
+
+     D                 G
+Su vara y su callado a mí
+  D                G
+aliento me infundirá
+   D               Bm             C    A7
+y mesa para mí aderezará
+
+Al valle de sombra…
+
+    D          G
+Misericordia y bien
+      D                 G
+me seguirán en donde esté
+             D           Bm                  C   A7
+y en la casa del Señor yo moraré. 
+
+Al valle de sombra…
+
+
+E                         A
+El Señor Jesús es mi pastor
+    E                   A 
+y nada a mí me faltará
+             E                  C#m           D       B7
+junto a aguas quietas me pastoreará
+E                     A
+mi alma Él confortará
+     E               A
+en su justicia me guiará
+     E                    C#m               D
+su nombre amo y Él me sostendrá
+
+      E        A  
+Al valle de sombra y muerte
+E             A
+yo nunca temeré
+E              A                      D
+porque el Señor conmigo está.
+       E         A
+Al valle de sombra y muerte
+E              A
+yo nunca temeré
+E               A                      D
+porque el Señor conmigo está.
+
+E                    A
+Su vara y su callado a mí
+  E                A
+aliento me infundirá
+   E              C#m          D
+y mesa para mí aderezará
+
+Al valle de sombra…
+
+E             A
+Misericordia y bien
+      E                 A
+me seguirán en donde esté
+             E          C#m                D
+y en la casa del Señor yo moraré. 
+
+Al valle de sombra…</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_e27.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_e29.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

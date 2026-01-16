@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>R10. Razón de vivir me diste</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">R10. Razón de vivir me diste</h1>
+    </div>
+
+    <pre data-key="G">R10. 
+
+E
+Razón de vivir me diste
+                        F#m
+Cuando ya no tenía
+          A
+Extendiste tus manos
+                    B7                      E
+Cuando el mundo me abandonó
+
+
+E                             Bm7
+Tú me miraste con ojos
+          E             A  Am
+De amor y ternura, 
+       E       C#m           
+me diste amor cuando
+F#m         B7        E    Bm7 E7
+nadie me quiso amar
+
+               A          B7
+// Es por eso que yo
+            G#m  C#m
+te amo Cristo
+         A          
+ y es por eso que 
+B7             E   E7        
+te amo Señor        
+     A           B7      G#m   - C#m
+tomaste mi vida y mi corazón
+          F#m           F#7      B7
+y una nueva criatura yo soy
+          A        B7
+y por eso Señor
+          G#m  C#m 
+Yo te canto 
+         F#m     B7  E
+y por eso te alabaré //
+
+      E         C#m
+Me diste amor cuando 
+F#m           B7       E
+Nadie me quiso  amar
+
+E
+Cambiaste mi llanto 
+                          F#m  
+y mi lamento en gozo
+A                          
+todos mis sueños
+      B7                     E
+tornáronse en realidad 
+E
+me diste alegría 
+              Bm7              E7          A     Am
+Cuando antes solo había amargura
+      E         C#m
+Me diste amor cuando 
+F#m           B7       E
+Nadie me quiso  amar
+
+
+
+D                                    
+Razón de vivir me diste 
+                         Em
+cuando yo no tenia
+       G(add9)                     
+me extendiste tus brazos 
+                  A7                         D
+cuando el mundo me abandono
+ 
+       D7                                   
+Me diste alegria cuando 
+Am7           D            G Gm
+antes todo era amargura
+       D       Bm           
+me diste amor cuando 
+Em           A7         D     Am7 - D
+nadie me quiso amar.
+
+            G(maj7)  
+Es por eso que  
+A7             F#m - Bm7
+yo te amo Cristo
+           Em        A7              D      Em F#m
+es por eso que te amo Señor
+   G(maj7)   A7     F#m   - Bm7
+tomaste mi vida y mi corazón
+          Em           E7         A7
+y una nueva criatura yo soy
+         G(maj7)  A7          F#m  - Bm7
+y por eso    Señor yo te canto
+         Em       A7        D
+y por eso yo te alabaré
+                                     Em           A7         D
+me diste amor cuando nadie me quiso amar.
+
+D
+Tornaste mi llanto 
+                           Em
+y mi lamento en gozo
+G
+todos mis sueños 
+      A                   D
+tornaronse realidad
+D                            Am7
+tú me miraste con ojos
+        D7          G         Gm
+de amor y ternura
+       D       Bm           
+me diste amor cuando 
+Em           A7         D     Am7 - D
+nadie me quiso amar.</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_r9.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_r11.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

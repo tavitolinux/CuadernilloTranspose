@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>P13. A                   E/G#              F#m</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">P13. A                   E/G#              F#m</h1>
+    </div>
+
+    <pre data-key="G">P13. 
+A                   E/G#              F#m
+Por amor de Sion no callaré
+           F#m/E             D    Bm            E
+y por amor de Jerusalén no descansaré
+A              E                          F#m
+hasta que salga como resplandor
+          F#m/E
+su justicia
+                D             Bm 
+y su salvación se encienda como
+E
+una antorcha
+   A                              E            
+// Entonces verán las gentes
+           F#m   F#m/E             
+tu justicia
+                 D
+y todos los reyes tu gloria,
+Bm                             E
+por nombre nuevo Jehová te nombrará
+      A                      E
+y serás corona de gloria
+                               F#m   F#m/E 
+en la mano de Jehová
+                        D
+y diadema del reino
+                  Bm           E
+en la mano del Dios tuyo //
+
+
+
+G                   D/F#            Em
+Por amor de Sion no callaré
+           Em/D             C    Am            D
+y por amor de Jerusalén no descansaré
+G              D/F#                        Em
+hasta que salga como resplandor
+          Em/D
+su justicia
+                C             Am 
+y su salvación se encienda como
+D
+una antorcha
+   G                             D/F#             Em 
+// Entonces verán las gentes tu justicia
+Em/D                 C
+         y todos los reyes tu gloria,
+Am                                D
+por nombre nuevo Jehová te nombrará
+      G                     D/F#
+y serás corona de gloria
+                               Em    Em/D
+en la mano de Jehová
+                        C
+y diadema del reino
+                   Am         D
+en la mano del Dios tuyo //</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_p12.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_p14.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

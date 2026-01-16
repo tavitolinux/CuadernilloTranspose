@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>P6. G                                        D/F#</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">P6. G                                        D/F#</h1>
+    </div>
+
+    <pre data-key="G">P6. 
+
+G                                        D/F#
+Pertenezco a ti, Señor Jesús.
+Em                                     Bm
+Y no hay nada que pueda borrar
+C                                 
+Ese amor que un día tú
+G/B
+pusiste dentro de mí
+Am               Am/G           D/F#
+Y que ahora quiero recordar.
+
+G                                D/F#
+Hoy mi vaso cae ante ti
+Em                               Bm
+Derramado a tus pies Señor,
+C                            
+A rogarte tu perdón,
+G/B 
+por tanta rebelión,
+Am               Am/G       
+Que impide que pueda
+C              D    
+darte mi amor.
+
+   G                             D
+Alcanza, oh Dios, mi corazón.
+G        G/B   C           G/B
+Rómpelo   y  límpialo.
+Am                                     Em   D
+Que tu puedas a través de mí
+Am                            Em  D/F#
+Reflejar tu gloria y tu a -  mor.
+
+Am            D                 G    D/F#  Em
+Reflejar tu gloria y tu amor.
+         Am            D               G
+         Reflejar tu gloria y tu amor.
+
+
+A                                   E
+Pertenezco a ti, Señor Jesús.
+F#m                                    C#m
+Y no hay nada que pueda borrar
+D                                 C#m
+Ese amor que un día tú pusiste dentro de mí
+Bm               Bm              E
+Y que ahora quiero recordar.
+
+A                                 E
+Hoy mi vaso cae ante ti
+F#m                              C#m
+Derramado a tus pies Señor,
+D                             C#m
+A rogarte tu perdón, por tanta rebelión,
+Bm                                D           E    
+Que impide que pueda darte mi amor.
+
+  A                             E
+Alcanza, oh Dios, mi corazón.
+A        A7   D           
+Rómpelo   y  límpialo.
+Bm                                     F#m  E
+Que tu puedas a través de mí
+Bm                            F#m  E
+Reflejar tu gloria y tu a -  mor.
+
+Am            D               G    D/F#  Em
+Reflejar tu gloria y tu amor.
+         Am            D               G
+         Reflejar tu gloria y tu amor.</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_p5.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_p7.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

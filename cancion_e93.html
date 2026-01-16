@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>E93. Él es Jehová Dios de la creación</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">E93. Él es Jehová Dios de la creación</h1>
+    </div>
+
+    <pre data-key="G">E93. 
+Em
+Él es Jehová Dios de la creación
+                G                  B7
+Él es Jehová Dios poderoso
+                 Em
+Él es Dios fuerte la roca eterna
+               G        B7            Em
+Él es Jehová tu Dios tu sanador
+
+               G                    Em
+Canta aleluya, canta aleluya,
+              G                     B7
+canta aleluya, canta aleluya.
+           Em
+Él es Jehová Dios poderoso
+             G           B7           Em
+Él es Jehová tu Dios tu sanador
+
+Em
+Él es el Gran yo Soy, el Dios de Abraham
+                  G                       B7
+Jehová Shalom, el Dios de Paz yo soy
+                  Em
+El Dios de Israel, su rey Eterno
+               G          B7            Em
+Él es Jehová tu Dios tu sanador
+
+Canta Aleluya …
+
+Em
+Él es tu proveedor, Jehová Jireh
+                 G                            B7
+Dios de la salvación, Dios el Mesías
+             Em
+Entre nosotros testificó de él
+              G         B7             Em
+Él es Jehová tu Dios tu sanador
+
+Canta Aleluya…
+
+Dm
+Él es Jehová Dios de la creación
+                F                    A7
+Él es Jehová Dios poderoso
+                 Dm
+Él es Dios fuerte la roca eterna
+               F        A7            Dm
+Él es Jehová tu Dios tu sanador
+
+               F                    Dm
+Canta aleluya, canta aleluya,
+              F                      A7
+canta aleluya, canta aleluya.
+           Dm
+Él es Jehová Dios poderoso
+             F           A7           Dm
+Él es Jehová tu Dios tu sanador
+
+Dm
+Él es el Gran yo Soy, el Dios de Abraham
+                  F                        A7
+Jehová Shalom, el Dios de Paz yo soy
+                  Dm
+El Dios de Israel, su rey Eterno
+               F          A7            Dm
+Él es Jehová tu Dios tu sanador
+
+Canta Aleluya …
+
+Dm
+Él es tu proveedor, Jehová Jireh
+                 F                            A7
+Dios de la salvación, Dios el Mesías
+             Dm
+Entre nosotros testificó de él
+              F         A7             Dm
+Él es Jehová tu Dios tu sanador
+
+Canta Aleluya…</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_e92.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_e94.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

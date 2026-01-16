@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>J26. Jesús con su gran amor</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">J26. Jesús con su gran amor</h1>
+    </div>
+
+    <pre data-key="G">J26. 
+G                            C
+Jesús con su gran amor
+       D                G
+Nos ha traído a este lugar
+                                   C
+Para encontrarnos con el
+D                     G C2 G
+Para recibir al rey
+
+G                      C
+//Es el rey, es el rey
+     D                              G
+Jesús su majestad es el rey//
+
+G                          C
+Su vida puso por mi
+D  
+Ya no mas corderos
+G
+El lo hizo por mi
+ G
+Hoy muchas gracias 
+      C   D                        G C2 G
+Le doy a Jesús mi salvador
+
+G                                 C
+Es mi salvador, es mi salvador
+       D                  G
+Cordero perfecto es mi salvador
+                                    C
+Es mi salvador, es mi salvador
+    D                     G
+Jesús es mi salvador
+
+G                       C 
+Su mano amiga el me extendió
+D                     G
+Y por mi nombre el me llamo
+                                      C
+Con gran confianza me acercare a el
+D                             G C2  G
+Porque Jesús es mi amigo fiel
+
+G                                    C
+Es mi amigo fiel, Es mi amigo fiel,
+      D                       G
+Tomado de la mano yo iré con el
+G                                    C
+Es mi amigo fiel, Es mi amigo fiel,
+    D                       G
+Jesús es mi amigo fiel
+
+
+//Es el rey es el rey
+
+Jesús mi salvador 
+
+Y mi amigo fiel//
+
+
+///Jesús mi salvador 
+
+y mi amigo fiel///</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_j25.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_j27.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

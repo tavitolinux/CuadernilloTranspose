@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>A51. Aquél quien</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">A51. Aquél quien</h1>
+    </div>
+
+    <pre data-key="G">A51. 
+G  D            
+Aquél quien 
+Am          D               Bm   Am7  D7
+la buena obra empezó
+G  D           
+Aquél quien
+Am           D              Bm    E
+la buena obra empezó
+        Am                          D
+será fiel en completarla
+        Am                          D
+Él es fiel en completarla
+           Am          G
+el que la comenzó
+        C                    D          G
+será fiel en completarla en mí
+
+        G                    D/F#
+Si la lucha que enfrentas
+Em          D      C     G/B   Am    Am/G
+A tu esperanza tornó ya sin paz
+        D/F#        Em
+o de tanto esperar 
+           D                  D7       G/B  D
+ya perdiendo tu canción estás
+
+G           D/F#           Em      D
+puedes creer que su mano está en ti
+  C       G/B           Am         Am/G
+seguro estás nunca te ha de abandonar
+D                      D7                      G
+eres su gozo y su gran tesoro aquí
+
+Intro
+A  E   Bm  A E
+A  E  A(Notas A D A)
+
+A  E            
+Aquél quien 
+Bm          E               C#m   Bm7  E7
+la buena obra empezó
+A  E           
+Aquél quien
+Bm           E              C#m    F#
+la buena obra empezó
+        Bm                          E
+será fiel en completarla
+        Bm                          E
+Él es fiel en completarla
+           Bm          A/C#
+el que la comenzó
+        D                    E          A
+será fiel en completarla en mí
+
+A E  D  E    A  E  D E  
+
+        A                    E/G#
+Si la lucha que enfrentas
+    F#m     E            D  A/C#   Bm
+A tu esperanza tornó  ya sin paz
+Bm/A       E/G#        F#m
+       o de tanto esperar 
+           E             D             C#m  E7
+ya perdiendo tu canción estás
+
+A           E/G#            F#m      E
+puedes creer que su mano está en ti
+  D           A/C#          
+seguro estás nunca
+Bm           Bm/A
+te ha de abandonar
+E                      E7                      A
+eres su gozo y su gran tesoro aquí</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_a50.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_a52.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

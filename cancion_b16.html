@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>B16. Estrofa I:</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">B16. Estrofa I:</h1>
+    </div>
+
+    <pre data-key="G">B16. 
+
+Estrofa I:
+                      D
+Bien pudo hacer,
+     G                   A                    D
+Robots que le siguieran por doquier
+        G                  A                  D
+Que siempre estuvieran a sus pies,
+   E                               A     
+Y le dijeran te amo, y no solo una vez
+                     D
+Bien pudo hacer,
+        G                  A              D
+Que todas las mañanas tambien,
+G                      A                 D
+Antes de engrasarse en el taller,
+    E                                    A           
+Doblaran sus rodillas y hablaran con El.
+
+Coro:
+G                           D      
+      Bien pudo hacerlos:
+A                       Bm     
+      Cientos de ellos,
+G                  D             A 
+      Era muy fácil para El,
+G                           D      
+      Bien pudo hacerlos:
+A                  Bm       
+      Pero no quiso;
+G                        D
+      Y aqui estoy yo,
+                    A
+Y aqui estas tu:
+         A     G         D     A
+   Para adorar          
+
+
+Estrofa II 
+                   D
+Bien pudo hacer
+G                    A                 D
+Seres de hojalata y de papel,
+G                     A                D
+Que con aplastarles un botón
+     E                         A
+Gritaran: Aleluya y dijeran: Amen
+                     D
+Bien pudo hacer
+     G                      A                  D
+Robots que un Domingo al despertar,
+     G                        A                   D
+después de sus engranes descansar,
+       E                              A
+Pensaran en reunirse y con puntualidad.
+
+
+Coro:
+G                           D      
+      Bien pudo hacerlos:
+A                       Bm     
+      Cientos de ellos,
+G                  D             A
+      Era muy fácil para El,
+G                           D      
+      Bien pudo hacerlos:
+A                  Bm    
+      Pero no quiso;
+G                        D
+      Y aqui estoy yo,
+                    A
+Y aqui estas tu:
+                  D     D7
+   Para adorar
+
+
+Puente:
+ G                                                     F#m
+No-o, no-o, no, no, no;  no, no lo entiendo
+G                                    A                 D      D7
+Que tan santo como es El, me vio a mi.
+G                                                     F#m   
+No-o, no-o, no, no, no;   no lo comprendo
+G                                A  
+Sin embargo estoy aquí
+               D
+para adorar
+G            D    G           D
+Para adorar  Para adorar.
+
+
+   B17. 
+
+Buen Pastor, Luz verdadera,
+
+Príncipe de Paz
+
+Roca de refugio en la adversidad,
+
+esperanza firme, mi canción, mi canción
+
+Protector, Fuente Bendita de la Salvación
+
+Rey de Gloria, Eterno Redentor,
+
+Dios del universo, mi Señor.</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_b15.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_b18.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

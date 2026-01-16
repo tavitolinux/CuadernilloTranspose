@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>C15. //Cantaría   sin   parar</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; }
+        
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            overflow-x: auto; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        /* Estilo para acordes azules y negritas */
+        span.c { 
+            color: #2563eb !important; 
+            font-weight: bold !important; 
+            font-style: normal;
+        }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">C15. //Cantaría   sin   parar</h1>
+    </div>
+
+    <pre data-key="G">C15. 
+
+  D                A            
+//Cantaría   sin   parar 
+        Bm                        G
+por   lo   que hiciste en mi
+  D            A            
+danzaría siempre oh, Dios 
+Bm                G
+por tu gran Amor//
+
+D
+Arde mi corazón,
+A
+Para poder decir
+Bm        
+que me has salvado 
+         G             A
+bo  - rraste mi pasado
+
+D              
+Señor quiero gritar,
+A
+hacia todo lugar
+Bm
+Que si tu estas por mí,
+G                       A
+quien es contra mi
+
+G                                            D
+Estamos cantando, somos felices
+G                                                 D
+Estamos danzando pues somos libres
+
+Em7
+Si   te   pudiéramos mirar, 
+F#m7
+y contemplar tu sonreír
+Gmaj7
+Y   a   tus ángeles danzar, 
+                                     D    A  Bm  G 
+porque el gozo está aquí
+
+  E                B            
+//Cantaría   sin   parar 
+        C#m                       A
+por   lo   que hiciste en mi
+  E            B            
+danzaría siempre oh, Dios 
+C#m               A
+por tu gran Amor   //
+
+E
+Arde mi corazón,
+B
+Para poder decir
+C#m        
+que me has salvado 
+         A
+bo  - rraste mi pasado
+
+E              
+Señor quiero gritar,
+B
+hacia todo lugar
+C#m
+Que si tu estas por mí,
+A
+quien es contra mi
+
+A                                            E
+Estamos cantando, somos felices
+A                                                 E
+Estamos danzando pues somos libres
+
+F#m7
+Si   te   pudiéramos mirar, 
+G#m7
+y contemplar tu sonreír
+Amaj7
+Y   a   tus ángeles danzar, 
+                                     E    B  C#m  A 
+porque el gozo está aquí</pre>
+
+    <div class="transpose-controls">
+        <button id="transpose-up">+</button>
+        <button id="transpose-down">-</button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_c14.html" class="nav-btn" >Anterior</a>
+        <a href="index.html" class="nav-btn primary">Inicio</a>
+        <a href="cancion_c16.html" class="nav-btn" >Siguiente</a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

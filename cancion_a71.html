@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>A71. Amor tan grande profundo y sublime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; position: relative; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; padding-right: 40px; }
+        
+        /* Botón Lupa Buscador */
+        .song-search-btn { position: absolute; right: 15px; top: 15px; background: none; border: none; font-size: 18px; color: #2563eb; cursor: pointer; }
+
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        span.c { color: #2563eb !important; font-weight: bold !important; font-style: normal; }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        /* Controles + Agregar Estrella */
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display:flex; justify-content:center; align-items:center; transition: 0.2s; }
+        .transpose-controls button:hover { transform: scale(1.05); }
+        .btn-setlist { background: #10b981 !important; font-size: 18px !important; }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">A71. Amor tan grande profundo y sublime</h1>
+        <button class="song-search-btn" id="openSearchBtn" title="Buscar otra canción"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Contenedor Visual (La transposición se hace a nivel local en script.js) -->
+    <pre id="song-content" data-key="G">A71. 
+
+ G             C                                  Am
+Amor tan grande profundo y sublime
+             F        G           C      G
+Es el amor de mi creador
+                              C
+No hay nada en el mundo
+                          Am
+Que pueda igualarse
+                 F              G     C    G
+Al grande amor de mi Señor
+
+E           Am                       Em
+Dios de amor, oh Dios de amor
+               F    Dm               G
+Sólo eres tú, el Dios de amor
+                     Am
+No hay otro Dios  como tu 
+               Em
+Fuera de ti  no lo hay 
+                     F               G          C   G
+No hay otro Dios como tú no lo hay
+
+                   C                       
+El sólo nos ama,
+                              Am
+nos protege y nos guarda
+                     F                 G            C G
+De todos los males que existen aquí
+                    C                           Am
+Por eso cantamos con toda el alma
+                      F       G            C  G 
+Pues nos ha dado de su dulce calma
+
+Capo en el 2do traste
+
+ E              A          
+Amor tan grande 
+                        F#m 
+profundo y sublime
+             D        E           A      E
+Es el amor de mi creador
+                              A
+No hay nada en el mundo
+                          F#m
+Que pueda igualarse
+                 D            E      A    E
+Al grande amor de mi Señor
+
+C#         F#m                      C#m
+Dios de amor, oh Dios de amor
+                D   Bm               E
+Sólo eres tú, el Dios de amor
+                     F#m
+No hay otro Dios  como tú 
+               C#m
+Fuera de ti  no lo hay 
+                    D               E          A  
+No hay otro Dios como tú no lo hay
+
+ E                A       
+Él sólo nos ama,
+                              F#m
+nos protege y nos guarda
+                     D        
+De todos los males
+         E            A E
+que existen aquí
+                    A              
+Por eso hoy cantamos
+             F#m 
+con toda el alma
+                      D     
+Pues nos ha dado 
+      E            A E 
+de su dulce calma
+
+
+ F#            B          
+Amor tan grande 
+                        G#m 
+profundo y sublime
+             E        F#         B   F#
+Es el amor de mi creador
+                               B
+No hay nada en el mundo
+                          G#m
+Que pueda igualarse
+                   E          F#      B    F#
+Al grande amor de mi Señor
+
+D#         G#m                      D#m
+Dios de amor, oh Dios de amor
+                E   Cm               F#
+Sólo eres tú, el Dios de amor
+                     G#m
+No hay otro Dios  como tú 
+               D#m
+Fuera de ti  no lo hay 
+                    E               F#          A  
+No hay otro Dios como tú no lo hay
+
+ F#              B       
+Él sólo nos ama,
+                              G#m
+nos protege y nos guarda
+                     E        
+De todos los males
+         F#           B  F#
+que existen aquí
+                    B              
+Por eso hoy cantamos
+             G#m 
+con toda el alma
+                      E     
+Pues nos ha dado 
+      F#          B  F# 
+de su dulce calma</pre>
+
+    <!-- El contenido inmutable oculto para que app.js lo utilice al guardar el tono en el Setlist -->
+    <script id="original-content" type="text/plain">A71. 
+
+ G             C                                  Am
+Amor tan grande profundo y sublime
+             F        G           C      G
+Es el amor de mi creador
+                              C
+No hay nada en el mundo
+                          Am
+Que pueda igualarse
+                 F              G     C    G
+Al grande amor de mi Señor
+
+E           Am                       Em
+Dios de amor, oh Dios de amor
+               F    Dm               G
+Sólo eres tú, el Dios de amor
+                     Am
+No hay otro Dios  como tu 
+               Em
+Fuera de ti  no lo hay 
+                     F               G          C   G
+No hay otro Dios como tú no lo hay
+
+                   C                       
+El sólo nos ama,
+                              Am
+nos protege y nos guarda
+                     F                 G            C G
+De todos los males que existen aquí
+                    C                           Am
+Por eso cantamos con toda el alma
+                      F       G            C  G 
+Pues nos ha dado de su dulce calma
+
+Capo en el 2do traste
+
+ E              A          
+Amor tan grande 
+                        F#m 
+profundo y sublime
+             D        E           A      E
+Es el amor de mi creador
+                              A
+No hay nada en el mundo
+                          F#m
+Que pueda igualarse
+                 D            E      A    E
+Al grande amor de mi Señor
+
+C#         F#m                      C#m
+Dios de amor, oh Dios de amor
+                D   Bm               E
+Sólo eres tú, el Dios de amor
+                     F#m
+No hay otro Dios  como tú 
+               C#m
+Fuera de ti  no lo hay 
+                    D               E          A  
+No hay otro Dios como tú no lo hay
+
+ E                A       
+Él sólo nos ama,
+                              F#m
+nos protege y nos guarda
+                     D        
+De todos los males
+         E            A E
+que existen aquí
+                    A              
+Por eso hoy cantamos
+             F#m 
+con toda el alma
+                      D     
+Pues nos ha dado 
+      E            A E 
+de su dulce calma
+
+
+ F#            B          
+Amor tan grande 
+                        G#m 
+profundo y sublime
+             E        F#         B   F#
+Es el amor de mi creador
+                               B
+No hay nada en el mundo
+                          G#m
+Que pueda igualarse
+                   E          F#      B    F#
+Al grande amor de mi Señor
+
+D#         G#m                      D#m
+Dios de amor, oh Dios de amor
+                E   Cm               F#
+Sólo eres tú, el Dios de amor
+                     G#m
+No hay otro Dios  como tú 
+               D#m
+Fuera de ti  no lo hay 
+                    E               F#          A  
+No hay otro Dios como tú no lo hay
+
+ F#              B       
+Él sólo nos ama,
+                              G#m
+nos protege y nos guarda
+                     E        
+De todos los males
+         F#           B  F#
+que existen aquí
+                    B              
+Por eso hoy cantamos
+             G#m 
+con toda el alma
+                      E     
+Pues nos ha dado 
+      F#          B  F# 
+de su dulce calma</script>
+
+    <div class="transpose-controls">
+        <button id="transpose-up" title="Subir tono">+</button>
+        <button id="transpose-down" title="Bajar tono">-</button>
+        <button id="btn-add-setlist" class="btn-setlist" title="Agregar al Setlist con el tono actual"><i class="fas fa-star"></i></button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_a70.html" class="nav-btn" ><i class="fas fa-arrow-left"></i> Ant</a>
+        <a href="index.html" class="nav-btn primary"><i class="fas fa-home"></i> Inicio</a>
+        <a href="cancion_a72.html" class="nav-btn" >Sig <i class="fas fa-arrow-right"></i></a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>

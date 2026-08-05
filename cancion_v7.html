@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>V7. //Ven a caminar sobre las aguas,</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding-bottom: 90px; }
+        .song-header { background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; text-align: center; position: relative; }
+        h1.title { margin: 0; font-size: 18px; color: #2563eb; padding-right: 40px; }
+        
+        /* Botón Lupa Buscador */
+        .song-search-btn { position: absolute; right: 15px; top: 15px; background: none; border: none; font-size: 18px; color: #2563eb; cursor: pointer; }
+
+        pre { 
+            font-family: Arial, sans-serif !important; 
+            font-size: 10pt !important; 
+            line-height: 1.2; 
+            white-space: pre; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        span.c { color: #2563eb !important; font-weight: bold !important; font-style: normal; }
+        
+        .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #ddd; z-index: 1000; }
+        .nav-btn { text-decoration: none; color: #444; padding: 10px 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; background: #fdfdfd; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+        .nav-btn.primary { background: #2563eb; color: white; border: none; }
+        
+        /* Controles + Agregar Estrella */
+        .transpose-controls { position: fixed; right: 15px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 1100; }
+        .transpose-controls button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #2563eb; color: white; font-size: 22px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display:flex; justify-content:center; align-items:center; transition: 0.2s; }
+        .transpose-controls button:hover { transform: scale(1.05); }
+        .btn-setlist { background: #10b981 !important; font-size: 18px !important; }
+        
+        @media (max-width: 600px) {
+            .transpose-controls { top: 80px; right: 10px; flex-direction: row; }
+            .transpose-controls button { width: 40px; height: 40px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="song-header">
+        <h1 class="title">V7. //Ven a caminar sobre las aguas,</h1>
+        <button class="song-search-btn" id="openSearchBtn" title="Buscar otra canción"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Contenedor Visual (La transposición se hace a nivel local en script.js) -->
+    <pre id="song-content" data-key="G">V7. 
+
+C Em Dm G
+//Ven a caminar sobre las aguas,
+C Em Dm G
+ven a caminar sobre el mar,
+Dm G C Bb A
+confíame tu mano no temas nada,
+Dm G C F G
+ven a caminar sobre el mar. //
+Em Bm
+Clava tus ojos en los míos,
+Em Bm
+no mires a tu alrededor,
+C Bm
+aunque las olas rujan a tu oído,
+C D
+sabes que siempre siempre estoy con,
+C Em Dm G
+sabes que siempre siempre estoy contigo caminando.
+C Em Dm G
+contigo caminando.
+Dm G C A# A
+Confíame tu mano no temas nada,
+Dm G C F G
+/// ven a caminar sobre el mar. ///
+
+
+
+  E              G#m                F#m B7
+//Ven a caminar sobre las aguas,
+  E             G#m            F#m B7
+ven a caminar sobre el mar,
+F#m    B7              E              D  C#7
+confíame tu mano no temas nada,
+F#m           B7                E 
+ven a caminar sobre el mar. //
+G#m                           D#m
+Clava tus ojos en los míos,
+G#m                        D#m
+no mires a tu alrededor,
+E                                        D#m
+aunque las olas rujan a tu oído,
+E                                                     F
+sabes que siempre siempre estoy con,
+F# 
+sabes que siempre siempre estoy
+     E     G#m   F#m    B7
+contigo cami – nan -  do.
+     E     G#m   F#m    B7
+contigo cami – nan -  do.
+F#m    B7              E              D  C#7
+confíame tu mano no temas nada,
+F#m           B7                E 
+ven a caminar sobre el mar. //
+
+
+  F              Am                 Gm    C
+//Ven a caminar sobre las aguas,
+  F             Am               Gm C
+ven a caminar sobre el mar,
+Gm     C             F                 D#   D7
+confíame tu mano no temas na - da,
+Gm           C                 F 
+ven a caminar sobre el mar. //
+Am                             Em
+Clava tus ojos en los míos,
+Am                        Em
+no mires a tu alrededor,
+F                                         Em
+aunque las olas rujan a tu oído,
+F                                                     F#
+sabes que siempre siempre estoy con,
+G 
+sabes que siempre siempre estoy
+     F      Am     Gm     C
+contigo cami – nan -  do.
+     F      Am     Gm     C
+contigo cami – nan -  do.
+Gm     C             F                 D#   D7
+confíame tu mano no temas na - da,
+Gm           C                 F 
+ven a caminar sobre el mar</pre>
+
+    <!-- El contenido inmutable oculto para que app.js lo utilice al guardar el tono en el Setlist -->
+    <script id="original-content" type="text/plain">V7. 
+
+C Em Dm G
+//Ven a caminar sobre las aguas,
+C Em Dm G
+ven a caminar sobre el mar,
+Dm G C Bb A
+confíame tu mano no temas nada,
+Dm G C F G
+ven a caminar sobre el mar. //
+Em Bm
+Clava tus ojos en los míos,
+Em Bm
+no mires a tu alrededor,
+C Bm
+aunque las olas rujan a tu oído,
+C D
+sabes que siempre siempre estoy con,
+C Em Dm G
+sabes que siempre siempre estoy contigo caminando.
+C Em Dm G
+contigo caminando.
+Dm G C A# A
+Confíame tu mano no temas nada,
+Dm G C F G
+/// ven a caminar sobre el mar. ///
+
+
+
+  E              G#m                F#m B7
+//Ven a caminar sobre las aguas,
+  E             G#m            F#m B7
+ven a caminar sobre el mar,
+F#m    B7              E              D  C#7
+confíame tu mano no temas nada,
+F#m           B7                E 
+ven a caminar sobre el mar. //
+G#m                           D#m
+Clava tus ojos en los míos,
+G#m                        D#m
+no mires a tu alrededor,
+E                                        D#m
+aunque las olas rujan a tu oído,
+E                                                     F
+sabes que siempre siempre estoy con,
+F# 
+sabes que siempre siempre estoy
+     E     G#m   F#m    B7
+contigo cami – nan -  do.
+     E     G#m   F#m    B7
+contigo cami – nan -  do.
+F#m    B7              E              D  C#7
+confíame tu mano no temas nada,
+F#m           B7                E 
+ven a caminar sobre el mar. //
+
+
+  F              Am                 Gm    C
+//Ven a caminar sobre las aguas,
+  F             Am               Gm C
+ven a caminar sobre el mar,
+Gm     C             F                 D#   D7
+confíame tu mano no temas na - da,
+Gm           C                 F 
+ven a caminar sobre el mar. //
+Am                             Em
+Clava tus ojos en los míos,
+Am                        Em
+no mires a tu alrededor,
+F                                         Em
+aunque las olas rujan a tu oído,
+F                                                     F#
+sabes que siempre siempre estoy con,
+G 
+sabes que siempre siempre estoy
+     F      Am     Gm     C
+contigo cami – nan -  do.
+     F      Am     Gm     C
+contigo cami – nan -  do.
+Gm     C             F                 D#   D7
+confíame tu mano no temas na - da,
+Gm           C                 F 
+ven a caminar sobre el mar</script>
+
+    <div class="transpose-controls">
+        <button id="transpose-up" title="Subir tono">+</button>
+        <button id="transpose-down" title="Bajar tono">-</button>
+        <button id="btn-add-setlist" class="btn-setlist" title="Agregar al Setlist con el tono actual"><i class="fas fa-star"></i></button>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="cancion_v6.html" class="nav-btn" ><i class="fas fa-arrow-left"></i> Ant</a>
+        <a href="index.html" class="nav-btn primary"><i class="fas fa-home"></i> Inicio</a>
+        <a href="cancion_v8.html" class="nav-btn" >Sig <i class="fas fa-arrow-right"></i></a>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script>$(document).ready(function() { $("pre").transpose(); });</script>
+</body>
+</html>
